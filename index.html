@@ -1,43 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML BASIC</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<style>
-    h3{
-        color: pink;
-    }
-    #heading5{
-        color: orange;
-    }
-    .heading5{
-        color: green;
-    }
-</style>
-<body>
-    <h1 title="Heading 1" style="color: blue;">Heading 1</h1>
-    <h2 style="color: red;">Heading 2</h2>
-    <h3 >Heading 3</h3>
-    <h4 >Heading 4</h4>
-    <h5 id="heading5">Heading 5</h5>
-    <!--<h5 class="heading5">Heading 5</h5>-->
-    <h6 style="color: #00FFFF;">Heading 6</h6>
-    <a href="https://www.ubru.ac.th/" target="_blank">
-        <img src="images/meaw.png" alt="My Cat" width="64" height="64">
-    </a>
-    <img src="images/sakura.png" alt="Sakura" width="64" height="64">
-    <img title="โปเกมอนเดะนิ" src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/890.png" alt="Pokemon" width="256" height="256">
-    
-    <!--เทส HTML เดะนิ week2 นิ-->
-    
-    
-    <p>Lorem, <b>I</b> sit amet consectetur adipisicing elit. Esse optio cum eum quae in explicabo pariatur aliquid vitae consectetur laboriosam, totam ratione quis eveniet voluptatum quibusdam officiis amet quos eligendi?</p>
-    <p><i><ins>Love</ins></i> ไฮไลต์ชนะเลิศสแล็กโปรนรีแพทย์ แกรนด์สามช่าเย้วรามาธิบดีซาบะ วิกโช<mark>You</mark>อัลบั้มโบกี้ เห็นด้วยแรงผลักติวเตอร์ เซรามิกฮาโลวีนม้าหินอ่อนวิก แก๊สโซฮอล์ภควัมปติสามแยกคาแร็คเตอร์ว้อดก้า ยาวีอัลบัมผิดพลาดแก๊สโซฮอล์ หน่อมแน้มสเก็ตช์โอเคหมวย สตรอเบอรีถ่ายทำภควัมปติ รีดไถดีมานด์โปรดิวเซอร์เมคอัพ แบล็คแฟล็ตอาข่าเธคหมวย มาราธอน ไลน์ฮ่องเต้อุปัทวเหตุสไลด์ พาสเจอร์ไรส์โหงวเฮ้งเป่ายิ้งฉุบ เนิร์สเซอรี่คันยิ</p>
-    
+    <title>Web Form</title>
 
-    
+    <style>
+        form {
+            
+            padding: 15px;
+            width: 410px;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: left;
+            vertical-align: center;
+            padding-left: 3px;
+            padding-right: 3px;
+            padding-top: 3px;
+            
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">แบบสอบถาม</h2>
+
+<hr style="width: 1400px; margin: 1px;">
+
+<form action="#" method="post">
+
+<table style="background-color:#f3e3c0 ;"   >
+    <tr>
+        <td colspan="2"><b>ข้อมูลผู้ตอบแบบสอบถาม</b></td>
+    </tr>
+
+    <tr>
+        <td><b>ชื่อ-นามสกุล</b></td>
+        <td><input type="text" name="fullname" size="40"></td>
+    </tr>
+
+    <tr>
+        <td><b>รหัสนักศึกษา</b></td>
+        <td><input type="text" name="student_id" size="40"></td>
+    </tr>
+
+    <tr>
+        <td><b>เพศ</b></td>
+        <td>
+            <input type="radio" name="gender" value="ชาย" checked>ชาย
+            <input type="radio" name="gender" value="หญิง">หญิง
+        </td>
+    </tr>
+
+    <tr>
+        <td ><b>สังกัดคณะ</b></td>
+        <td >
+            <select name="faculty" size="10" >
+                <option>วิทยาศาสตร์</option>
+                <option>วิทยาการคอมพิวเตอร์</option>
+                <option>ครุศาสตร์</option>
+                <option>บริหารธุรกิจและการจัดการ</option>
+                <option>มนุษยศาสตร์</option>
+                <option>เทคโนโลยีอุตสาหกรรม</option>
+                <option>เกษตรศาสตร์</option>
+                <option>พยาบาลศาสตร์</option>
+                <option>สถาปัตยกรรมศาสตร์</option>
+                <option>แพทย์แผนไทยและทางเลือก</option>
+                <option>นิติศาสตร์</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><b>แม่สีที่ชื่นชอบ</b></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="checkbox" value="แดง">แดง
+            <input type="checkbox" value="เขียว">เขียว
+            <input type="checkbox" value="น้ำเงิน">น้ำเงิน
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><b>ผลไม้ที่ชื่นชอบ</b></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="checkbox" value="ทุเรียน">ทุเรียน
+            <input type="checkbox" value="สตรอเบอรี">สตรอเบอรี
+            <input type="checkbox" value="ส้ม">ส้ม<br>
+            <input type="checkbox" value="กล้วย">กล้วย
+            <input type="checkbox" value="แอปเปิ้ล">แอปเปิ้ล
+            <input type="checkbox" value="มะม่วง">มะม่วง
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><b>อาหารที่ชื่นชอบ</b></td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <input type="checkbox" value="ไก่ย่าง">ไก่ย่าง
+            <input type="checkbox" value="ไข่เจียวหมูสับ">ไข่เจียวหมูสับ
+            <input type="checkbox" value="แกงเขียวหวานไก่">แกงเขียวหวานไก่<br>
+            <input type="checkbox" value="ต้มยำกุ้ง">ต้มยำกุ้ง
+            <input type="checkbox" value="ผัดไทย">ผัดไทย
+            <input type="checkbox" value="ราดหน้าหมี่กรอบ">ราดหน้าหมี่กรอบ
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align:center; padding-top:5px; padding-bottom:5px;">
+            <input type="submit" value="บันทึก">
+        </td>
+    </tr>
+
+</table>
+
+</form>
+
 </body>
 </html>
